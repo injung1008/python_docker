@@ -26,4 +26,5 @@ class ReaderBase(metaclass=ABCMeta):
 
 class ScraperBase(metaclass=ABCMeta):
     @abstractmethod
-    pass
+    def driver(self):
+        pass

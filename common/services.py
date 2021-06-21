@@ -2,6 +2,7 @@ import json
 import pandas as pd
 from rest_framework.common.abstracts import PrinterBase, ReaderBase, ScraperBase
 import googlemaps
+from selenium import webdriver
 
 
 class Printer(PrinterBase):
@@ -35,7 +36,8 @@ class Reader(ReaderBase):
 class Scraper(ScraperBase):
 
     def driver(self) -> object:
-        return webdriver.Chrome('C:\Users\bitcamp\work_space\django-rest-framework\rest_framework\project\common')
+        return webdriver.Chrome('./chromedriver.exe')
 
     def auto_login(self):
+        pass
 
