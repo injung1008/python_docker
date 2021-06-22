@@ -36,6 +36,7 @@ class Service(Reader):
         station_names = []
         for name in crime['관서명']:
             station_names.append('서울' + str(name[:-1] + '경찰서'))
+        print(station_names)
         station_addrs = []
         station_lats = []
         station_lngs = []
@@ -220,10 +221,10 @@ class Service(Reader):
 
 if __name__ == '__main__':
     s = Service()
-    # s.save_police_pos()
+    s.save_police_pos()
     # s.save_cctv_pop()
     # s.save_police_norm()
-    s.save_folium_map()
+    # s.save_folium_map()
 
 
 
