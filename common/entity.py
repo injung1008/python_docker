@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
+#데이터를 은닉화 한다음 필요할 때 꺼내쓰는 개념
 @dataclass
 class FileDTO(object):
 

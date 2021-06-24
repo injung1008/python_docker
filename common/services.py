@@ -31,12 +31,12 @@ class Reader(ReaderBase):
         return json.load(open(f'{self.new_file(file)}.json', encoding='UTF-8'))
 
     def gmaps(self) -> object:
-        return googlemaps.Client(key='AIzaSyBwiDx_sTL-DwIOJCXnf-BqgVjSRcRkb7A')
+        return googlemaps.Client(key='')
 
 class Scraper(ScraperBase):
 
     def driver(self) -> object:
-        return webdriver.Chrome('./chromedriver.exe')
+        return webdriver.Chrome('../../../../project/admin/common/chromedriver.exe')
 
     def auto_login(self):
         pass
